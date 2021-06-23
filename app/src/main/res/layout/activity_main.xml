@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/previewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:visibility="invisible"
+        >
+        <ImageView
+            android:id="@+id/previewImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/preview_image" />
+
+        <ImageView
+            android:id="@+id/btnSave"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_margin="30dp"
+            android:src="@drawable/ic_baseline_save_24"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/logo_save" />
+
+        <ImageView
+            android:id="@+id/btnCancel"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_margin="30dp"
+            android:src="@drawable/ic_baseline_not_interested_24"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/logo_cancel" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cameraLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        >
+
+        <RelativeLayout
+            android:id="@+id/viewFinderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            >
+            <androidx.camera.view.PreviewView
+                android:id="@+id/viewFinder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/btnResolutionSettings"
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_baseline_settings_overscan_24"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/tvCurrentResolution"
+            android:contentDescription="@string/logo_resolution"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/btnFlash"
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_baseline_flash_auto_24"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/logo_flash"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/tvCurrentResolution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resolution_size"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/btnResolutionSettings"
+            android:layout_alignParentEnd="true"
+            />
+
+        <ImageView
+            android:id="@+id/btnSwitchCam"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_margin="30dp"
+            android:src="@drawable/ic_baseline_camera_switch_24"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/logo_switch_camera"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/btnCapture"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_baseline_circle_24"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/logo_capture"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/btnChoosePicToUpload"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_margin="30dp"
+            android:src="@drawable/ic_baseline_cloud_upload_24"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/logo_choose_to_upload"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderZoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="55dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/btnCapture"
+            app:thumbColor="@color/white"
+            app:trackColor="@color/white"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

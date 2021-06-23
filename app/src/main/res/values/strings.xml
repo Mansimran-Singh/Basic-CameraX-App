@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Skill Review</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="selected_image_for_upload">SELECTED IMAGE FOR UPLOAD</string>
+    <string name="upload">UPLOAD</string>
+    <string name="logo_resolution">LOGO RESOLUTION</string>
+    <string name="logo_flash">LOGO FLASH</string>
+    <string name="resolution_size">720x1080</string>
+    <string name="logo_switch_camera">LOGO SWITCH CAMERA</string>
+    <string name="logo_capture">LOGO CAPTURE</string>
+    <string name="logo_choose_to_upload">LOGO CHOOSE TO UPLOAD</string>
+    <string name="preview_image">PREVIEW IMAGE</string>
+    <string name="logo_save">LOGO SAVE</string>
+    <string name="logo_cancel">LOGO CANCEL</string>
+    <string name="enter_url">Type address here</string>
+    <string name="enter_url_address">Enter URL Address</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="select">SELECT</string>
+    <string name="logo_camera">LOGO CAMERA</string>
+</resources>
